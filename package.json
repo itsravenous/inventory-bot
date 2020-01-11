@@ -1,0 +1,22 @@
+{
+  "name": "inventory-bot",
+  "version": "1.0.0",
+  "description": "Automated inventory for Slack RPG games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsravenous/inventory-bot.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/itsravenous/inventory-bot/issues"
+  },
+  "homepage": "https://github.com/itsravenous/inventory-bot#readme",
+  "dependencies": {
+    "google-sheets-node-api": "^0.3.0"
+  }
+}
