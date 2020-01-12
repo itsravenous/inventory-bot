@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns inventory for another user 1`] = `
+"*Body:*
+Ring of power
+
+*Small pouch:*
+Lembas bread
+
+"
+`;
+
+exports[`returns inventory for user 1`] = `
+"*Body:*
+Sting (d15)
+Pipe
+
+*Sack:*
+Seed cake
+
+"
+`;

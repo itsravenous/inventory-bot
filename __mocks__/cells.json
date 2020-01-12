@@ -1,0 +1,123 @@
+{
+  "Bilbo": [
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C1",
+      "row": 1,
+      "col": 1,
+      "value": "Body",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C1"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C2",
+      "row": 1,
+      "col": 2,
+      "value": "Sack",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C2"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C1",
+      "row": 2,
+      "col": 1,
+      "value": "Sting (d15)",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C1"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C2",
+      "row": 2,
+      "col": 2,
+      "value": "Seed cake",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C2"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R3C1",
+      "row": 3,
+      "col": 1,
+      "value": "Pipe",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R3C1"
+        }
+      }
+    }
+  ],
+  "Frodo": [
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C1",
+      "row": 1,
+      "col": 1,
+      "value": "Body",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C1"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C2",
+      "row": 1,
+      "col": 2,
+      "value": "Small pouch",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R1C2"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C1",
+      "row": 2,
+      "col": 1,
+      "value": "Ring of power",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C1"
+        }
+      }
+    },
+    {
+      "id": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C2",
+      "row": 2,
+      "col": 2,
+      "value": "Lembas bread",
+      "_links": {
+        "self": {
+          "rel": "self",
+          "type": "application/atom+xml",
+          "href": "https://spreadsheets.google.com/feeds/cells/SOME-SPREADSHEET-ID/od6/public/values/R2C2"
+        }
+      }
+    }
+  ]
+}
