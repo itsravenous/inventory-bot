@@ -1,4 +1,4 @@
-const inventoryBot = require("./inventory.js");
+const inventoryBot = require("./functions/inventory.js");
 it("returns inventory for user", async () => {
   const inventory = await inventoryBot.getInventory("Bilbo");
   expect(inventoryBot.inventoryToText(inventory)).toMatchSnapshot();
