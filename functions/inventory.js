@@ -47,6 +47,10 @@ exports.handler = async (event, context, callback) => {
       key === "" ? value : decodeURIComponent(value).replace(/\+/g, " ")
   );
 
+  console.log("===================================");
+  console.log("Getting inventory for", user_name);
+  console.log("===================================");
+
   const inventoryText = inventoryToText(await getInventory(user_name));
   callback(null, {
     statusCode: 200,
