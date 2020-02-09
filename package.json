@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/itsravenous/inventory-bot#readme",
   "dependencies": {
-    "google-sheets-node-api": "^0.3.0"
+    "@itsravenous/google-sheets-public": "^2.0.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "jest": "^24.9.0"

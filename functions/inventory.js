@@ -1,29 +1,28 @@
-const GoogleSpreadsheet = require("google-sheets-node-api");
+const { fetchSheet } = require("@itsravenous/google-sheets-public");
+const { SHEET_ID, GOOGLE_API_KEY, SLACK_TOKEN, GM_USERNAME } = process.env;
 
 const getInventory = async character => {
-  const spreadsheet = await new GoogleSpreadsheet(
-    process.env.SHEET_ID
-  ).getSpreadsheet();
-  const inventoryWorksheet = spreadsheet.worksheets.find(
-    worksheet => worksheet.title.toLowerCase() === character.toLowerCase()
-  );
-  if (!inventoryWorksheet) return ["No items"];
-  const cells = await inventoryWorksheet.getCells();
-
-  const receptacles = cells
-    .filter(cell => cell.row === 1)
-    .reduce((acc, cell) => {
-      acc[cell.col] = cell.value;
+  try {
+    const sheet = await fetchSheet({
+      sheetId: SHEET_ID,
+      tabName: character.toLowerCase(),
+      apiKey: GOOGLE_API_KEY
+    });
+    const rows = sheet.values;
+    if (!rows) throw "Sheet not found";
+    const receptacles = rows[0];
+    const items = receptacles.reduce((acc, receptacle, index) => {
+      acc[receptacle] = [
+        ...(acc[receptacle] || []),
+        ...rows.slice(1).map(row => row[index])
+      ];
       return acc;
     }, {});
-
-  const items = cells.reduce((acc, cell) => {
-    if (cell.row === 1) return acc;
-    acc[receptacles[cell.col]] = acc[receptacles[cell.col]] || [];
-    acc[receptacles[cell.col]].push(cell.value);
-    return acc;
-  }, {});
-  return items;
+    return items;
+  } catch (e) {
+    console.error(e);
+    return ["No items"];
+  }
 };
 
 const inventoryToText = inventory => {
@@ -37,6 +36,7 @@ const inventoryToText = inventory => {
 
   return inventoryText;
 };
+
 
 exports.getInventory = getInventory;
 exports.inventoryToText = inventoryToText;
